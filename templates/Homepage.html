@@ -31,7 +31,7 @@
 				<td> <a href={{ url_for('personalInformation', empno = record.empno) }}> {{ record.name }}</a> </td>
 				<td> {{record.dept}} </td>
 				<td> {{record.subject}} </td>
-				<td> <a href={{ url_for('editRecord', empno = record.empno) }}> edit </a>, 
+				<td> <a href={{ url_for('editRecordForm', empno = record.empno) }}> edit </a>, 
 					<a href={{ url_for('deleteEmployee', empno = record.empno) }}> delete </a>
 				</td>
 		</tr>
